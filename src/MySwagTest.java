@@ -89,7 +89,7 @@ public class MySwagTest {
 	
 	}
 	
-	@Test(priority = 6)
+	@Test(priority = 7)
 	public void theNameZtoA() throws InterruptedException {
 		Thread.sleep(3000);
 		WebElement selected = 	driver.findElement(By.xpath("//select[@data-test='product-sort-container']"));
@@ -103,7 +103,7 @@ public class MySwagTest {
 	
 	}
 	
-	@Test(priority = 7)
+	@Test(priority = 8)
 	public void thepricelowtohigh() throws InterruptedException {
 		Thread.sleep(3000);
 		WebElement selected = 	driver.findElement(By.xpath("//select[@data-test='product-sort-container']"));
@@ -118,7 +118,7 @@ public class MySwagTest {
 	}
 	
 	
-	@Test(priority = 8)
+	@Test(priority = 9)
 	public void thepricehightolow() throws InterruptedException {
 		Thread.sleep(3000);
 	WebElement price	=driver.findElement(By.xpath("//select[@data-test='product-sort-container']"));
