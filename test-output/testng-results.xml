@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="9" passed="9" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2024-08-27T19:34:34 EET" name="Default suite" finished-at="2024-08-27T19:34:48 EET" duration-ms="13793">
+    <groups>
+    </groups>
+    <test started-at="2024-08-27T19:34:34 EET" name="Default test" finished-at="2024-08-27T19:34:48 EET" duration-ms="13793">
+      <class name="MySwagTest">
+        <test-method is-config="true" signature="Setup()[pri:0, instance:MySwagTest@613a8ee1]" started-at="2024-08-27T19:34:34 EET" name="Setup" finished-at="2024-08-27T19:34:35 EET" duration-ms="781" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Setup -->
+        <test-method signature="log_in()[pri:1, instance:MySwagTest@613a8ee1]" started-at="2024-08-27T19:34:35 EET" name="log_in" finished-at="2024-08-27T19:34:35 EET" duration-ms="281" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- log_in -->
+        <test-method signature="theProductIsFound()[pri:2, instance:MySwagTest@613a8ee1]" started-at="2024-08-27T19:34:35 EET" name="theProductIsFound" finished-at="2024-08-27T19:34:35 EET" duration-ms="39" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- theProductIsFound -->
+        <test-method signature="theSortItem()[pri:3, instance:MySwagTest@613a8ee1]" started-at="2024-08-27T19:34:35 EET" name="theSortItem" finished-at="2024-08-27T19:34:35 EET" duration-ms="88" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- theSortItem -->
+        <test-method signature="TheAcutalTheLowestPrice()[pri:4, instance:MySwagTest@613a8ee1]" started-at="2024-08-27T19:34:35 EET" name="TheAcutalTheLowestPrice" finished-at="2024-08-27T19:34:35 EET" duration-ms="55" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TheAcutalTheLowestPrice -->
+        <test-method signature="TheAcutalTheHighestPrice()[pri:5, instance:MySwagTest@613a8ee1]" started-at="2024-08-27T19:34:35 EET" name="TheAcutalTheHighestPrice" finished-at="2024-08-27T19:34:35 EET" duration-ms="14" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TheAcutalTheHighestPrice -->
+        <test-method signature="theNameAtoZ()[pri:6, instance:MySwagTest@613a8ee1]" started-at="2024-08-27T19:34:35 EET" name="theNameAtoZ" finished-at="2024-08-27T19:34:38 EET" duration-ms="3068" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- theNameAtoZ -->
+        <test-method signature="theNameZtoA()[pri:6, instance:MySwagTest@613a8ee1]" started-at="2024-08-27T19:34:38 EET" name="theNameZtoA" finished-at="2024-08-27T19:34:42 EET" duration-ms="3158" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- theNameZtoA -->
+        <test-method signature="thepricelowtohigh()[pri:7, instance:MySwagTest@613a8ee1]" started-at="2024-08-27T19:34:42 EET" name="thepricelowtohigh" finished-at="2024-08-27T19:34:45 EET" duration-ms="3109" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- thepricelowtohigh -->
+        <test-method signature="thepricehightolow()[pri:8, instance:MySwagTest@613a8ee1]" started-at="2024-08-27T19:34:45 EET" name="thepricehightolow" finished-at="2024-08-27T19:34:48 EET" duration-ms="3136" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- thepricehightolow -->
+      </class> <!-- MySwagTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
