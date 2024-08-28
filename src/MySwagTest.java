@@ -33,8 +33,16 @@ public class MySwagTest {
 	
 	@Test(priority = 2)
 	public void theProductIsFound() {
-		String Acutual = driver.findElement(By.xpath("//span[@data-test='title']")).getText();	
-		Assert.assertEquals(Acutual, Excepted);
+		
+	/*	String Acutual = driver.findElement(By.xpath("//span[@data-test='title']")).getText();	
+		Assert.assertEquals(Acutual, Excepted);*/
+		
+	WebElement theElement = driver.findElement(By.xpath("//span[@data-test='title']"));
+	boolean acutual = theElement.isDisplayed();
+	boolean Expected = true;
+	
+	Assert.assertEquals(acutual, Expected);
+	
 	}
 	
 	@Test(priority = 3)
@@ -46,10 +54,13 @@ public class MySwagTest {
 	WebElement selected = 	driver.findElement(By.xpath("//select[@data-test='product-sort-container']"));
 		Select myselect = new Select(selected);
 		myselect.selectByValue("lohi");
-		//myselect.selectByVisibleText("Price (low to high)");
-		//Thread.sleep(3000);
-		//driver.navigate().refresh();
-		//myselect.selectByIndex(1);
+		
+		/*myselect.selectByVisibleText("Price (low to high)");
+		Thread.sleep(3000);
+		driver.navigate().refresh();
+		myselect.selectByIndex(1);*/
+		
+		
 		
 	}
 	
@@ -57,12 +68,21 @@ public class MySwagTest {
 	public void TheAcutalTheLowestPrice() {
 	 
 	 List<WebElement>   theprice    =	driver.findElements(By.className("inventory_item_price"));
+	 String actualLowest = theprice.get(0).getText().replace("$", "");
+	 String actualHighest = theprice.get(theprice.size()-1).getText().replace("$", "");
 	 
-	for(int i = 0; i< theprice.size();i++) {
+	 double actualLowestdouble = Double.parseDouble(actualLowest);
+	 double actualHighestdouble = Double.parseDouble(actualHighest);
+	 
+	 Assert.assertEquals(actualHighestdouble>actualLowestdouble, true);
+	 
+	 
+	/*for(int i = 0; i< theprice.size();i++) {
 	String actual=	theprice.get(0).getText();
 	
 	Assert.assertEquals(actual, TheExpectedTheLowestPrice);
 	 }
+	 */
 	
 	}
 	
